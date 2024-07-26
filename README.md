@@ -1,6 +1,6 @@
 # SimpleBlogHTML
 
-**A Simple Blog Page Template Built With HTML and CSS. **
+**A Simple Blog Page Template Built With HTML and CSS**
 
 
 ## Notes
