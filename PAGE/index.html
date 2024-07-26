@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <title>Blog Name Here</title>
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('fonts/OpenSans-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background: linear-gradient(to right, #1c1c1c, #121212);
+            color: #e0e0e0;
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: fadeIn 0.45s ease-out;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
+        }
+        h1 {
+            text-align: center;
+            color: #bb86fc;
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: fadeIn 0.5s ease-out;
+        }
+        p.description {
+            text-align: center;
+            color: #b0b0b0;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: fadeIn 0.5s ease-out;
+        }
+        .blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .blog-list .blog-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.5s ease-out;
+        }
+        .blog-list .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .blog-list .blog-card h2 {
+            margin: 0;
+            color: #bb86fc;
+        }
+        .blog-list .blog-card p {
+            margin: 10px 0 0;
+            color: #d0d0d0;
+        }
+        .timestamp {
+            font-size: 0.9em;
+            color: #757575;
+        }
+        .tag {
+            font-size: 0.9em;
+            background-color: #333333;
+            color: #bb86fc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        .read {
+            font-size: 0.9em;
+            background-color: #333333;
+            color: #bb86fc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-left: 1px;
+        }
+        .gradient-section {
+            height: 150px;
+            background: linear-gradient(180deg, rgba(163, 228, 249, 0) 0%, rgba(163, 228, 249, 0.3) 50%, rgba(187, 134, 252, 0.8)100%);
+            animation: fadeIn 0.5s ease-out;
+        }
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Blog Page</h1>
+        <p class="description">A Long Description of My Quite Good Blog Page Which is About Nothing</p>
+        <div class="blog-list">
+            <div class="blog-card">
+                <h2><a href="blog/2.html">Blog Post Title 2</a></h2>
+                <p class="timestamp">Published on: YYYY-MM-DD<span class="tag">2</span></p>
+                <p>Description of The Second Blog Text</p>
+            </div>
+            <div class="blog-card">
+                <h2><a href="blog/1.html">Blog Post Title 1</a></h2>
+                <p class="timestamp">Published on: YYYY-MM-DD<span class="tag">1</span></p>
+                <p>Description of The First Blog Text</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="gradient-section"></div>
+</body>
+</html>
