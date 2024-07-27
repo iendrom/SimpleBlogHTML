@@ -2,6 +2,9 @@
 
 **A Simple Blog Page Template Built With HTML and CSS**
 
+![Main Page](https://github.com/iendrom/SimpleBlogHTML/blob/main/main.png)
+
+![Blog Page](https://github.com/iendrom/SimpleBlogHTML/blob/main/page.png)
 
 ## Notes
 >If you want to do this, use  "&lt;span class="quote">Text&lt;/span&gt;"
